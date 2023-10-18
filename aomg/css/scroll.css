@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* title animation */
+.animate__motion .char {
+    animation: slide-up2 0.4s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(70ms * var(--char-index));
+}
+
+@keyframes slide-up2 {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    /* 더 빨리 진행되게 하기 위해 */
+}

@@ -1,0 +1,57 @@
+비주얼 1920*875
+로고 246*44
+섹션2 슬라이드 720*512
+비디오 배경 : 1920*600
+비디오 이미지 : 690*391
+섹션4 가로이미지 : 620*438
+세로이미지 : 377*531
+섹션5 배경 : 989*890
+커리어 : 960*450
+고객센터 : 1920 * 510
+
+색상 : #ffc414 / #616161
+
+해더 : 
+-about / 아티스트 / 스케줄 / contact / above store
+
+섹션2 : 아티스트 
+섹션3 : 비디오
+섹션4 : 앨범
+섹션 5: 뉴스
+섹션6: 투어
+섹션7 : contact - sns
+
+
+* 레이아웃 
+1.해더 : gnb width값 정해서 가운데 위치 시키고, float
+2.메인 슬라이드 visual : ul>li묶기(li에 height설정)
+-스플리팅 텍스트 라이브러리 사용
+-img  height:100% , width:auto
+-li안에 span4개 만들어서 width:1px, height:100%설정 / position:absolute줘서 각각 left25%로 위치
+-슬릭 api설정
+-arrow, indicate css / 인디케이터 active일때 css 다르게 설정해주기
+-게이지바는 slick-active : after속성을 사용하고, animation을 width 0 -> 100%되게 7초동안 이루어지게 설정
+- span animation은 4개 각각 0.2s 씩 시간차를 두고 애니메이션 실행
+    0% {
+        width: 25%;
+        background-color: #000;
+    }
+    50% {
+        width: 25%;
+        background-color: #000;
+    }
+    99% {
+        background-color: #000;
+    } //  width를 25%로 설정해서 4칸에 맞게 하고 99%일때 배경을 한번 더 보이게 설정해서 자연스럽게 배경이 나눠지는 듯한 느낌들게하기
+
+
+-
+
+3.contents
+- 스크롤 누르면 스크롤 탑위치 설정 - html,body scrollTop
+- title - scrollaJs 설정. 
+-slickJs 인디케이터 text() or html()로 수정하기
+- title을 1200px로 잡고 이미지가 들어가는 부분을 1500px로 잡기
+-indicate 부분 slide2를 기준으로 left 시키기
+-인디케이터 애니메이션은 left-값으로 밀어넣은 다음 left 0 으로 만들기
+

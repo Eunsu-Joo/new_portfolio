@@ -1,0 +1,1000 @@
+@charset "UTF-8";
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* section1 : visual*/
+.visual .slide>li {
+    position: relative;
+    width: 100%;
+    height: 875px;
+    text-align: center;
+
+}
+
+.visual .slide>li img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: scale(1) translateX(-50%);
+    top: 0;
+}
+
+.visual .slide li .visual-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 20%;
+    font-size: 105px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.visual .slide li .btn {
+    bottom: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+/* 슬릭 indicator / arrow */
+.visual .slick-arrow {
+    font-family: 'Poppins';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 10;
+    background: none;
+    width: 130px;
+    height: 52px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+.visual .slick-arrow::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.87);
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.visual .slick-arrow::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* 슬릭 버튼 마우스 오버 */
+
+.visual .slick-arrow:hover {
+    color: #000;
+    transition: all 0.3s;
+}
+
+.visual .slick-arrow:hover::before {
+    width: 112%;
+}
+
+.visual .slick-arrow:hover::after {
+    background-color: #ffc414;
+}
+
+.visual .slick-next::before {
+    right: 0;
+}
+
+.visual .slick-prev::before {
+    left: 0;
+}
+
+.visual .slick-next::after {
+    left: 60%;
+}
+
+.visual .slick-prev {
+    left: 0;
+    text-align: right;
+}
+
+.visual .slick-next {
+    right: 0;
+    text-align: left;
+}
+
+/* 슬릭 indicator */
+.visual .slick-dots {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-68%);
+    bottom: 3%;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visual .slick-dots li {
+    width: 1px;
+    height: 100%;
+
+}
+
+.visual .slick-dots li button {
+    width: 1px;
+    height: 100%;
+    border-right: 4px solid rgba(255, 255, 255, 0.8);
+    text-indent: -9999999px;
+}
+
+/* 활성화된 인디케이터 */
+.visual .slick-dots>li.slick-active button {
+    border-right: 4px solid #ffc414a2;
+    transition: border-right 0.3s;
+}
+
+/* 게이지바 */
+.visual li.slick-current::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #ffc414;
+    opacity: 0.7;
+    animation: bar 7s;
+}
+
+@keyframes bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* mask - 이미지 슬라이드 화면 전환되는 부분 */
+.visual .slide li .mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+.visual .slide li .mask.a {
+    left: 0;
+}
+
+.visual .slide li .mask.b {
+    left: 25%;
+}
+
+.visual .slide li .mask.c {
+    left: 50%;
+}
+
+.visual .slide li .mask.d {
+    left: 75%;
+}
+
+.visual .slide .slick-active .mask.a {
+    animation: mask 0.4s;
+}
+
+.visual .slide .slick-active .mask.b {
+    animation: mask 0.6s;
+}
+
+.visual .slide .slick-active .mask.c {
+    animation: mask 0.8s;
+}
+
+.visual .slide .slick-active .mask.d {
+    animation: mask 1s;
+}
+
+@keyframes mask {
+    0% {
+        width: 25%;
+        background-color: #000;
+    }
+
+    50% {
+        width: 25%;
+        background-color: #000;
+    }
+
+    99% {
+        background-color: #000;
+    }
+
+    /* 99퍼까지는 검정색이 유지될수 있도록 하기 위함 */
+}
+
+/* 스플리팅 애니메이션 */
+.visual .slick-active .splitting .char {
+    display: inline-block;
+    /* span하나하나로 감싸져있기 때문에 성격바꿔주기 */
+    animation: slide-up 1s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(60ms * var(--char-index));
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+
+/* 메인이미지 scale 애니메이션 */
+.visual .slide .slick-active img {
+    animation: imgAni 7s;
+}
+
+@keyframes imgAni {
+    0% {
+        transform: scale(1.2);
+    }
+}
+
+/* contents */
+.contents {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+
+
+/* scrollBox */
+.contents .information .scrollBox {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.contents .information .scrollBox a {
+    display: block;
+    width: 350px;
+    height: 50px;
+    background-color: #ffc414;
+    padding-left: 25px;
+    letter-spacing: 2px;
+    font-size: 21px;
+    position: relative;
+    line-height: 50px;
+}
+
+.contents .information .scrollBox span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation: scroll linear 0.8s infinite;
+    /* 한 속도로 진행될 수 있도록 linear 설정 */
+}
+
+@keyframes scroll {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 7px;
+    }
+
+    100% {
+        top: 0;
+    }
+
+    /* 스크롤 올라갔다 내려갔다 설정할때는 원래상태 - 변화 - 원래상태 */
+}
+
+.contents .information .scrollBox span img {
+    width: 100%;
+}
+
+
+.contents>.title-inner::after {
+    content: '';
+    width: 3px;
+    height: 60px;
+    position: absolute;
+    background-color: #ffc414;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+/* common title */
+
+
+.contents .title .en {
+line-height: 120%;
+letter-spacing: 5px;
+
+}
+
+/* slide2 */
+.contents .slideBox {
+    height: 500px;
+    margin-top: 50px;
+}
+
+/* right값을 -50%로줘서 삐져나온것처럼 보이게 하기 */
+.contents .slide2 {
+    width: 1500px;
+    position: absolute;
+    right: -50%;
+    top: 0;
+    margin-top: 50px;
+}
+
+.contents .slide2 li {
+    margin-right: 50px;
+}
+
+.contents .slide2 li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.contents .slide2 li a p.img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contents .slide2 img {
+    width: 100%;
+    transition: all 1s ease-in;
+}
+
+/* 테두리 오버 효과 */
+.contents .slide2 li a::before {
+    content: '';
+    width: 0;
+    height: 6px;
+    background-color: #ffc414;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.contents .slide2 li a::after {
+    content: '';
+    width: 0;
+    height: 6px;
+    background-color: #ffc414;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.contents .slide2 li .img::before {
+    content: '';
+    width: 6px;
+    height: 0;
+    background-color: #ffc414;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.contents .slide2 li .img::after {
+    content: '';
+    width: 6px;
+    height: 0;
+    background-color: #ffc414;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.contents .slide2 li a:hover:before,
+.contents .slide2 li a:hover:after{
+    opacity: 1;
+    width: 100%;
+}
+.contents .slide2 li .img:hover:before,
+.contents .slide2 li .img:hover:after{
+    opacity: 1;
+    height: 100%;
+}
+/* 이미지 검정, 아이콘 효과 */
+.contents .slide2 li a:hover img{
+    transform: scale(1.1);
+}
+.contents .slide2 li a:hover .img span::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.45);
+    z-index: 5;
+    transition: all 0.5s;
+}
+.contents .slide2 li a .img span::after{
+    content: '';
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon/more.png);
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    
+    transition: all 0.5s;
+    z-index: 10;
+    opacity: 0;
+}
+.contents .slide2 li a:hover .img span::after{
+    opacity: 1;
+    transition-delay: 0.2s;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+/* slide2 indicater - text */
+/* 지금 slide2에 absolute가 걸려있고, 상위부모인 slide2가 앱솔루트가 되어있기 때문에
+left -300px로 이동시켜줘야 함 */
+.contents .slideBox .slide2 .slick-dots{
+    position: absolute;
+    left: -300px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contents .slideBox .slide2 .slick-dots button{
+    font-family: 'apple-m';
+    height: 30px;
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.contents .slideBox .slide2 .slick-dots button span{
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #616161;
+    margin-left: 10px;
+    transform: translateY(4px);
+}
+.contents .slideBox .slide2 .slick-dots button strong{
+    font-size: 30px;
+    margin-right: 7px;
+    transform: translateY(4px);
+    
+}
+/* indicator-active underline */
+.contents .slideBox .slide2 .slick-dots .slick-active{
+    position: relative;
+    transition: all 0.3s;
+}
+.contents .slideBox .slide2 .slick-dots .slick-active::after{
+    content: '';
+    width: 400px;
+    height: 4px;
+    background-color: #ffc414;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    animation: lineAni 1s;
+}
+@keyframes lineAni{
+    0%{
+        opacity: 0;
+        left: -500px;
+    }
+}
+.contents .btn{
+    font-size: 22px;
+    left: 0;
+    bottom: 13px;
+}
+
+/* video section */
+.video{
+    width: 100%;
+    height: 650px;
+    padding: 100px 0;
+    background-image: url(../images/videoImage1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.video::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+.video .inner-contents{
+    overflow: hidden;
+}
+.video .title{
+
+    color: #fff;
+    padding: 10px 20px;text-align: left;
+    float: left;
+    margin-top: 50px;
+}
+.video .title div:nth-child(1){
+    font-size: 20px;
+    font-family: apple-m;
+    display: inline-block;
+    padding: 15px 8px;
+}   
+.video .title div:nth-child(2){
+    font-size: 80px;
+    letter-spacing: 5px;
+    line-height: 70%;
+    padding: 20px 0 80px 0;
+}
+.video .title .a-title{
+    font-size: 36px;
+    display: block;
+    color: #ff0000;
+    padding-top: 5px;
+}
+.video .videoBox{
+    width: 690px;
+    position: relative;
+    height: 391px;
+    float: right;
+}
+.video .videoBox iframe{
+    position: absolute;
+    display: none;
+}
+.video .videoBox .mask{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.video .videoBox .mask::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 100;
+}
+.video .videoBox .mask span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.video .videoBox .mask span::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-image: url(../images/icon/video2.png);
+    background-size: cover;
+}
+.video div.active .mask
+{
+    display: none;
+}
+.video div.active iframe{
+    display: block;
+}
+.video .videoBox .mask img{
+    width: 100%;
+    transition: all 1s;
+}
+/* albume section */
+.albume{
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.albume .title-inner{
+    width: 500PX;
+    position: absolute;
+    top: 0;
+    padding: 150PX 0 130PX 20px;
+    left: 25%;
+    z-index: 10;
+}
+.albume .title-inner::after{
+    content: '';
+    width: 3px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: #ffc414;
+    transform: translateY(-50%);
+}
+.albume .title-inner .title{
+    letter-spacing: 5px;
+    line-height: 100%;
+    position: relative;
+}
+
+.albume .title-inner p{
+    font-size: 22px;
+    font-family: 'apple=m';
+    letter-spacing: -1px !important;
+    font-weight: 600; 
+    padding-top: 10PX;
+}
+.albume .title-inner .btn{
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 20px !important;
+}
+
+.albume .list{
+    width: 1250px;
+    height: 1550px;
+    margin: 0 auto;
+    position: relative;
+}
+.albume .list li{
+    position: absolute;
+}
+.albume .list li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.albume .list li:nth-child(1){
+    left: -50px;
+    top: 550px;
+}
+.albume .list li:nth-child(2){
+    right: 63px;
+    top: 150px;
+}
+.albume .list li:nth-child(3){
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+}
+.albume .list li .img{
+    width: 490px;
+    height: 490px;
+    vertical-align: bottom;
+
+    overflow: hidden;
+}
+.albume .list li .img img{
+    width: 100%;
+    transition: all 1s;
+}
+
+.albume .list li .list-text{
+    position: absolute;
+    background-color: #fff;
+    width: 450px;
+    height: 260px;
+    border: 1px solid #ffc414;
+    line-height: 130%;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+.albume .list li .list-text h3{
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 110%;
+    padding-bottom: 10px;
+}
+.albume .list li .list-text h3 span{
+    color: #ffc414;
+}
+.albume .list li .list-text p{
+    word-break: keep-all;
+    font-size: 16px;
+    color: #616161;
+    line-height: 130%;
+}
+.albume .list li:nth-child(1) .list-text{
+    right: -200px;
+    bottom: 20px;
+    padding: 30px 0px 0 50px;
+}
+.albume .list li:nth-child(2) .list-text{
+    bottom:0;
+    left: -70px;
+    padding: 30px 10px 0 40px;
+}
+.albume .list li:nth-child(3) .list-text{
+    bottom:0;
+    left: -200px;
+    padding: 30px 20px 0 40px;
+}
+.albume .list li a .icon{
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #ffc414;
+    bottom: 13px;
+    left: 40px;
+    transition: all 0.3s;
+}
+.albume .list li a .icon::after{
+    content: '';
+    width: 2px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #ffc414;
+}
+.albume .list li a .icon::before{
+    content: '';
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #ffc414;
+}
+/* 마우스 오버 효과 */
+.albume .list li a:hover img{
+    transform: scale(1.1);
+}
+.albume .list li a:hover .list-text{
+    background-color: #ffc414;
+}
+.albume .list li a:hover .list-text h3,
+.albume .list li a:hover .list-text h3 span,
+.albume .list li a:hover .list-text p{
+    color: #fff;
+}
+.albume .list li a:hover .icon::before,
+.albume .list li a:hover .icon::after{
+    background-color: #fff;
+}
+.albume .list li a:hover .icon{
+    border: 1px solid #fff;
+}
+/* 스크롤 이미지 모션 애니메이션 */
+.albume .list li.animate__motion a .img img{
+    animation: list2 1s;
+}
+.albume .list li.animate__motion:nth-child(1) a .img img{
+    animation: list 1s;
+}
+@keyframes list {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+@keyframes list2 {
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}
+
+/* tour section*/
+.tour{
+    position: relative;
+    height: 445px;
+    background-image: url(../images/tour.jpg);
+    background-repeat: no-repeat;
+    background-position: 200%;
+    background-size: 50% ;
+}
+.tour .line{
+    z-index: -1;
+}
+.tour .inner-contents{
+    padding: 80px 0;
+}
+.tour .inner-contents::after{
+    content: '';
+    width: 3px;
+    height: 60px;
+    position: absolute;
+    background-color: #ffc414;
+    top: 0;
+    left: 10.2%;
+}
+.tour .title{
+    line-height: 150%;
+}
+.tour .inner-contents p{
+    color: #977d5b;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.tour .inner-contents .btn{
+    position: absolute;
+    bottom: 0;
+}
+.tour.animate__motion{
+    background-position: 100%;
+    transition: all 0.6s;
+}
+
+/* contact section */
+.contact{
+    width: 100%;
+    padding:  50px 0 100px 0;
+    background-image: url(../images/aomgContact3.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 150px 80px;
+}
+.contact .inner-contents{
+    overflow: hidden;
+}
+.contact .title{
+    padding: 30px 0;
+}
+.contact .left{
+    float: left;
+}
+.contact .right{
+    float: right;
+    margin-top: 60px;
+    overflow: hidden;
+}
+.contact .right li{
+    float: left;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+}
+.contact .right  li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+.contact .right  li a::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    background-color: #ffc414;
+    transition: all 0.3s;
+}
+.contact .right img{
+    width: 50%;
+    opacity: 0.7;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    
+}
+.contact .right  li a span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100%;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+}
+
+.contact .right  li a:hover::before{
+bottom: 0;
+}
+.contact .right  li a:hover img{
+    filter: invert(2);
+}
+.contact .right  li a:hover span{
+    color: #fff;
+    bottom: 25px;
+}
+
+/* 푸터 */
+footer{
+    background: #191a1a;
+    padding: 30px 60px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+footer ul{
+    clear: both;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+footer ul:nth-child(1) li{
+    font-weight: 600;
+    font-size: 15px;
+}
+footer ul li{
+    float: left;
+    margin-right: 25px;
+
+}
+footer p{
+    font-size: 15px;
+}
+footer .f-logo{
+    width: 150px;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .f-logo img{
+    width: 100%;
+}

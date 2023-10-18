@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.en{
+    font-family: 'Bebas Neue', cursive;
+}
+.btn{
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    font-size: 22px;
+}
+.inner-contents{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+ .btn::after {
+    content: '';
+    width: 65%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    background-color: #ffc414;
+    transition: all 0.3s;
+}
+
+.btn:hover:after {
+    width: 100%;
+    transition: all 0.3s;
+}
+.title {
+    color: #616161;
+    font-size: 58px;
+    letter-spacing: 5px;
+}
+/* 라인 */
+.line {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #eee;
+    z-index: 0;
+}
+
+.a {
+    left: 25%;
+}
+
+.b {
+    left: 50%;
+}
+.c {
+    left: 75%;
+}
