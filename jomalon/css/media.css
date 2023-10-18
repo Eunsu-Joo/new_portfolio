@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+@media (min-width:1281px) {
+    section {
+        margin-bottom: 60px;
+    }
+    #section1{
+        margin-top: 100px;
+    }
+    #section1 .slide-btn{
+        display: block;
+    }
+    #section1 img{
+        width: 100%;
+    }
+    #section1 .img1{
+        transform: translateX(0px);
+    }
+    #section1 .img2{
+        transform: translateX(0px);
+    }
+    #section1 .banner-img img {
+        width: 100%;
+        transform: translateX(0) translateY(0);
+    }
+    #section1 .slide-indicator span{
+        width: 13px;
+        height: 13px;
+    }
+    #section2 h2 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    #section1 .arrow-l,
+    #section1 .arrow-r {
+        width: 50px;
+    }
+    #section1 .slide-indicator{
+        width: 100px;
+    }
+    /* 패딩으로 내부 콘텐츠 조절 */
+    #section2 .padding-wrap {
+        margin: 0 15%;
+    }
+
+
+    #section3 h2 {
+        background-size: 80%;
+        background-position: 60% 0;
+        padding: 1em;
+    }
+
+    #section3 article {
+        padding: 4% 15%;
+    }
+
+    #section3 .section3-desc {
+        width: 100%;
+        padding: 5% 5%;
+    }
+
+    #section3 .section3-video {
+        width: 50%;
+    }
+
+    #section3 .section3-desc {
+        width: 50%;
+    }
+
+    #section3 .section3-desc p {
+        line-height: 1.5rem;
+    }
+
+    #section4 article {
+        padding: 0;
+    }
+
+    #section4 .section4-art1 {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
+
+    #section4 .section4-art2 {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 3%;
+    }
+
+    #section4 .section4-art2 h2 {
+        width: 50%;
+        padding: 3% 5%;
+        background-size: 60%;
+        background-position: 50% 50%;
+    }
+
+    #section4 .section4-art2 .newItem-box {
+        width: 25%;
+    }
+
+    #section4 .section4-art1 .banner1 {
+        width: 25%;
+        order: 1;
+    }
+
+    #section4 .section4-art1 .banner2 {
+        width: 25%;
+        order: 3;
+    }
+
+    #section4 .section4-art1 .section4-con {
+        order: 2;
+        width: 50%;
+        padding: 2% 3% 0 3%;
+    }
+
+    #section4 .section4-art1 .section4-con .notice ul li span {
+        padding-left: 1em;
+        display: inline-block;
+    }
+
+    #section4 .section4-art2 .gift-title {
+        padding: 3%;
+        background-size: 50%;
+    }
+
+    #section5 h2 {
+        width: 90%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: 350px 20px;
+        padding: 1em 0 2em 0;
+    }
+
+    #section5 article {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #section5 article .section5-box {
+        width: 50%;
+    }
+
+    #footer .footer-top {
+        padding: 0 10%;
+    }
+
+    #footer .footer-box {
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    #footer .footer-top ul li {
+        padding-right: 1em;
+    }
+
+    #footer .footer-l {
+        width: 70%;
+    }
+
+    #footer .footer-l p {
+        line-height: 1.8rem;
+    }
+
+    #footer .footer-r {
+        width: 28%;
+    }
+
+    #footer .footer-r .cs-info {
+        width: 100%;
+    }
+
+    #footer .sns-bar {
+        width: 100%;
+        padding: 0.5em 0;
+    }
+
+    .top {
+        margin: 0 2.5em 2.5em 0;
+    }
+
+    #section2 .swiper-container .swiper-slide img {
+        max-width: 80%;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    section {
+        margin-bottom: 60px;
+    }
+    #section1{
+        margin-top: 100px;
+    }
+    #section1 .slide-btn{
+        display: block;
+    }
+    #section1 img{
+        width: 100%;
+    }
+    #section1 .img1{
+        transform: translateX(0px);
+    }
+    #section1 .img2{
+        transform: translateX(0px);
+    }
+    #section1 .slide-indicator{
+        width: 100px;
+    }
+    #section1 .slide-indicator span{
+        width: 13px;
+        height: 13px;
+    }
+
+    #section2 h2 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+
+
+    /* 패딩으로 내부 콘텐츠 조절 */
+    #section2 .padding-wrap {
+        margin: 0 15%;
+    }
+
+    #section3 h2 {
+        background-size: 80%;
+        background-position: 130px 5px;
+    }
+
+    #section3 article {
+        padding: 4% 6%;
+    }
+
+    #section3 .section3-desc {
+        width: 100%;
+        padding: 5% 5%;
+    }
+
+    #section3 .section3-video {
+        width: 50%;
+    }
+
+    #section3 .section3-desc {
+        width: 50%;
+    }
+
+    #section3 .section3-desc p {
+        line-height: 1.5rem;
+    }
+
+    #section4 article {
+        padding: 0;
+    }
+
+    #section4 .section4-art1 {
+        max-width: 80%;
+        margin: 0 auto;
+        padding-top: 7%;
+
+    }
+
+    #section4 .section4-art2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #section4 .section4-art2 h2 {
+        width: 50%;
+        padding: 3% 5%;
+        background-size: 60%;
+        background-position: 50% 50%;
+    }
+
+    #section4 .section4-art2 .newItem-box {
+        width: 25%;
+    }
+
+    #section4 .section4-art1 .banner1 {
+        width: 27%;
+        order: 1;
+    }
+
+    #section4 .section4-art1 .banner2 {
+        width: 27%;
+        order: 3;
+    }
+
+    #section4 .section4-art1 .section4-con {
+        order: 2;
+        width: 46%;
+        padding: 2% 5% 0 5%;
+    }
+
+    #section4 .section4-art1 .section4-con .notice ul li span {
+        padding-left: 1em;
+        display: inline-block;
+    }
+
+    #section4 .section4-art2 .gift-title {
+        padding: 3%;
+        background-size: 50%;
+    }
+
+    #section5 h2 {
+        width: 80%;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: 70% 50%;
+        padding: 3% 0;
+    }
+
+    #section5 article {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #section5 article .section5-box {
+        width: 50%;
+    }
+
+    #footer .footer-top {
+        padding: 0 10%;
+    }
+
+    #footer .footer-box {
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    #footer .footer-top ul li {
+        padding-right: 1em;
+    }
+
+    #footer .footer-l {
+        width: 70%;
+    }
+
+    #footer .footer-l p {
+        line-height: 1.8rem;
+    }
+
+    #footer .footer-r {
+        width: 28%;
+    }
+
+    #footer .footer-r .cs-info {
+        width: 100%;
+    }
+
+    #footer .sns-bar {
+        width: 100%;
+        padding: 0.5em 0;
+    }
+
+    .top {
+        margin: 0 2.5em 2.5em 0;
+    }
+
+    #section2 .swiper-container .swiper-slide img {
+        max-width: 70%;
+    }
+
+}
+
+
+
+
+
+
+
+
+

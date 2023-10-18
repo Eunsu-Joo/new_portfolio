@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조말론 아웃라인</title>
+    <link rel="stylesheet" href="./swiper/swiper-btndle-css.css">
+    <link rel="stylesheet" href="./css/outliner.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="flex-box">
+   
+   
+    <section id="section4">
+     
+    </section>
+  
+</div>
+
+    <script src="./swiper/swiper-bundle-min.js"></script>
+    <script src="./js/jquery/jquery-3.5.1.min.js"></script>
+    <script>
+
+            $(document).ready(function(){
+                const section = $('section');
+            let sectionW = section.width();
+            console.log(sectionW);
+            // 
+
+
+            // 브라우저 창에 따른 미디어쿼리
+            function resizeHandler(){
+                let windowW = $(window).width();
+                sectionW = windowW;
+                let fontSize;
+                // 폰트
+
+                // 리사이즈 미디어 쿼리
+                if(windowW >= 1025){
+
+                } else if(windowW>= 768 && windowW<1024){
+
+                } else if(windowW<480 && windowW>= 320){
+                    fontSize = windowW / 60 *2;
+                    $('html').css({
+                        'fontSize':fontSize
+                    });
+                }
+               
+            }
+
+            $(window).resize(resizeHandler);
+            });
+
+
+    </script>
+    <script>
+
+      </script>
+</body>
+</html>

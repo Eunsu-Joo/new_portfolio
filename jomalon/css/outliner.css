@@ -1,0 +1,84 @@
+.flex-box{
+    display: flex;
+    flex-direction: column;
+}
+/* 플렉스 박스로 섹션을 감싸서 순서 이동 */
+
+#section2{
+    width: 100%;
+    background-color: antiquewhite;
+    order: 1;
+}
+    .swiper-container {
+width: 100%;
+height: 100%;
+}
+img{
+width: 100%;
+}
+#section3{
+order: 3;
+display: flex;
+flex-wrap: wrap;
+}
+/* 플렉스 박스로 아티클 순서 이동 */
+#section3 article.section3-art1{
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+}
+/* 플렉스 박스로 배너,콘텐츠 순서 이동
+모바일일떄는 width100% 웹일떄는 33% 사용
+*/
+
+#section3 .banner1{
+order: 1;
+}
+#section3 .banner1 .banner-img{
+    border: 1px solid red;
+    height: 300px;
+    overflow: hidden;
+}
+#section3 .banner1 .banner-img img{
+    transform: translateY(-21%);
+}
+/* div박스 height고정시켜 이미지 콘텐츠만 보이게 하기 */
+#section3 .banner2{
+order: 2;
+}
+#section3 .section3-con{
+    order: 3;
+}
+#section3 article.section3-art2{
+    background-color: rgb(32, 146, 38);
+    order: 1;
+}
+
+#section3 .section3-newItem{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section3 .newItem-box{
+    width: 50%;  
+}
+/* 웹일때는 width : 25% */
+#section4{
+order: 2;
+}
+
+#section5{
+order: 4;
+}
+.section5-box{
+    width: 100%;
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.insta2{
+    display: none;
+}
