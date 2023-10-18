@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+/* 1599 */
+@media screen and (max-width:1599px){
+    .innerHeader{
+        width: 95%;
+        min-width: 1024px;
+    }
+    .innerHeader .gnb>ul>li:nth-child(3) .dep2{
+        padding-left: 34%;
+    }
+    .innerHeader .gnb>ul>li:nth-child(4) .dep2,
+    .innerHeader .gnb>ul>li:nth-child(5) .dep2{
+        padding-left: 34%;
+    }
+    .innerHeader .gnb{
+        margin-left: 50px;
+    }
+    .innerHeader .gnb li{
+        margin-right: 0px;
+    }
+    .innerHeader .tnb li{
+        margin-right: 10px;
+    }
+
+    section.about ul,section.innovations .imgBox,
+    section.me ul.list,section.sns ul{
+        width: 95%;
+    }
+    section.about ul li a p.img{
+        height: 265px;
+    }
+    footer .inner{
+        width: 95%;
+        min-width: 90%;
+    }
+    footer .inner .list li{
+        margin-left: 20px;
+    }
+    footer .inner .list li:not(:last-child) a::after{
+        right: -10px;
+    }
+}
+
+/* 1024 테블릿 모드 */
+
+@media screen and (max-width:1024px){
+    .innerHeader{
+        width: 95%;
+        min-width: 90%;
+    }
+    .innerHeader .gnb,.innerHeader .tnb{
+        display: none;
+    }
+    .innerHeader .gnbMo{
+        display: block;
+        color: #fff;
+        font-size: 40px;
+        float: right;
+        opacity: 0.7;
+    }
+    section.main .mainTitle{
+        width: 80%;
+    }
+    section.about ul li a .about-text{
+        padding: 15px;
+    }
+    section.about ul li a p.img{
+        height: 190px;
+    }
+    section.about ul li a .about-text p{
+        font-size: 14px;
+    }
+    section.innovations .imgBox .inner .bottom{
+        padding: 25px 30px;
+    }
+    section.innovations .imgBox .inner .bottom p{
+        font-size: 14px;
+    }
+    section.me{
+        margin-bottom: 50px;
+    }
+    section.me ul.in li p::after{
+        left: -10px;
+    }
+    section.me ul.list li{
+        margin-bottom: 0;
+    }
+    section.me ul.list > li{
+        padding: 20px 50px;
+        font-size: 14px;
+    }
+    section.me ul.list li > p{
+        margin-bottom: 10px;
+    }
+    section.me ul.in li em{
+        width: 15%;
+    }
+    section.me ul.in li p{
+        width: 85%;
+        word-break: keep-all;
+    }
+    section.sns ul li{
+        margin-right: 1.7%;
+        width: 32%;
+    }
+    section.sns ul li a p.img{
+        height: 175px;
+        }
+    footer .inner .list{
+        float: left;
+        width: 100%;
+        border-top: 1px solid #ddd;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+}
+
+/* 768 테블릿 모드 */
+@media screen and (max-width:768px){
+    section.main .mainTitle h2{
+        font-size: 40px;
+    }
+    section.main .mainTitle p{
+        font-size: 20px;
+    }
+    section.about{
+        padding: 50px 0;
+    }
+    section.about .title h2{
+        font-size: 38px;
+    }
+    section.about ul li{
+        width: 100%;
+    }
+    section.about ul li a p.img{
+        height: 380px;
+    }
+    section.innovations .title h2{
+        font-size: 38px;
+    }
+    section.innovations .imgBox .inner h3{
+        padding: 20px 30px;
+    }
+    section.innovations .imgBox .inner .bottom{
+        padding: 10px 20px;
+    }
+    section.innovations .imgBox .inner .bottom p{
+        float: none;
+        margin-bottom: 10px;
+    }
+    section.innovations .imgBox .inner .bottom a{
+        float: none;
+        margin-left: 32%;
+        margin-bottom: 10px;
+    }
+    section.me{
+      padding: 40px 0;
+    }
+    section .title h2{
+        font-size: 38px;
+    }
+    section .title p{
+        max-width: 78%;
+        margin: 0 auto;
+        line-height: 130%;
+        word-break: keep-all;
+    }
+    section.me ul.in li em{
+        display: block;
+        float: none;
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    section.me ul.in li p{
+        width: 100%;
+    }
+    section.sns ul li{
+        width: 100%;
+    }
+    section.sns ul li a p.img{
+        height: 340px;
+    }
+    footer .inner{
+        width: 90%;
+    }
+    footer .inner .list{
+        font-size: 13px;
+    }
+    footer .inner .list li{
+        margin-left: 12px;
+    }
+    footer .inner .ftLogo{
+        float: none;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    footer .inner .address{
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width:414px){
+    h2{
+        font-size: 28px !important;
+        padding-bottom: 15px;
+    }
+    #header{
+        height: 60px;
+        line-height: 60px;
+    }
+    .innerHeader .logo img{
+        margin-top: 10px;
+    }
+    section.main .mainTitle h2{
+        font-size: 30px;
+    }
+    section.main .mainTitle p{
+        font-size: 16px;
+    }
+    section.main .mainTitle .view{
+        width: 150px;
+        font-size: 14px;
+    }
+    section.about{
+        padding: 30px 0;
+    }
+   
+
+    section.about .title p{
+        font-size: 14px;
+    }
+    section.about ul{
+        border: none;
+    }
+    section.about ul li a{
+        border: 1px solid #ddd;
+    }
+    section.about ul li a p.img{
+        height: 300px;
+    }
+    section.innovations{
+        margin-bottom: 100px;
+    }
+    section.innovations .imgBox .inner h3{
+        padding: 20px;
+    }
+    section.innovations .title p{
+        font-size: 16px;
+    }
+    section.innovations .imgBox .inner .bottom{
+        padding: 10px 13px;
+    }
+    section.innovations .imgBox .inner .bottom a{
+        margin-left: 23%;
+    }
+    section.innovations .imgBox .inner .bottom p{
+        word-break: keep-all;
+    }
+    section .title p{
+        font-size: 16px;
+    }
+    section .title h2{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    section.sns ul{
+        margin: 30px 0;
+    }
+    section.sns ul li a p.img{
+        height: 230px;
+    }
+    footer .inner .ftLogo{
+        float: none;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    footer .inner .address{
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:414px){
+    .wrap{
+        min-width: 320px;
+    }
+    .innerHeader{
+        min-width: 320px;
+    }
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.en{
+    font-family: 'apple-m',sans-serif;
+}
+.btn{
+    font-family: 'apple-m',sans-serif;
+}
+.mo{
+    display: none;
+}
+h2{
+    line-height: 130%;
+}
+section .title{
+    color: #000;
+    text-align: center;
+}
+section .title h2{
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+section .title h2 span{
+    color: #d2242d;
+}
+section .title p{
+    font-size: 18px;
+    color: #555;
+}

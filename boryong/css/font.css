@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'apple-m';
+    src: url(./font/AppleSDGothicNeoM.woff) format('woff');
+    font-weight: 400;
+}
+
