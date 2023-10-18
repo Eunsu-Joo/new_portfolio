@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    .container{
+        width: 90%;
+    }
+#section1 .article1 .swiper-button-rooms-next,
+#section1 .article1 .swiper-button-rooms-prev{
+    width: 40px;
+}
+    #section1 .article2-left{
+        padding-left: 3%;
+    }#section1 .article2-left p{
+        font-size: 0.83rem;
+    }
+    #section1 .article2-left table{
+        font-size: 0.8rem;
+    }
+    #section1 .article2-right .section2-right-item{
+        padding: 0.5em 0 0.5em 0.5em;
+        font-size: 0.85rem;
+    }
+    #section1 .article3 .article3-box {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+
+    #section1 .article1 .swiper-button-rooms-next,
+#section1 .article1 .swiper-button-rooms-prev{
+    width: 40px;
+}
+    #section1 .article2{
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+    #section1 .article2-left{
+        width: 100%;
+        padding-left: 2%;
+        word-break: keep-all;
+    }
+
+    #section1 .article2-left h4{
+        font-size: 1.5rem;
+    }
+
+    #section1 .article2-left p{
+        font-size: 0.88rem;
+    }
+
+    #section1 .article2-left table{
+        font-size: 0.8rem;
+    }
+
+
+    #section1 .article2-right{
+        width: 100%;
+        padding-left: 2%;
+        word-break: keep-all;
+    }
+
+
+    #section1 .article3 h4{
+        font-size: 1.5rem;
+        padding-left: 1.5rem;
+
+    }
+
+
+
+    #section1 .article3 .article3-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #section1 .article3 .article3-box{
+        width: 38%;
+        margin: 0.5em;
+        font-size: 0.85rem;
+    }
+
+    #section1 .article2-right .section2-right-item{
+        font-size: 0.88rem;
+    }
+
+    #section1 .article2-right #reservation-btn{
+        margin:1.5em  3em;
+        }
+
+        #section1 .article2-right .section2-right-item ul li{
+            font-size: 0.68rem;
+        }
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .container{
+        width: 90%;
+    }
+
+    #section1 .article1 .swiper-button-rooms-next,
+#section1 .article1 .swiper-button-rooms-prev{
+    width: 25px;
+}
+    #section1 .article2{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #section1 .article2-left{
+        width: 100%;
+        padding-left: 2%;
+        word-break: keep-all;
+    }
+
+    #section1 .article2-left h4{
+        font-size: 1.3rem;
+        padding: 1em 0;
+    }
+
+    #section1 .article3 h4::after{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #section1 .article2-left p{
+        font-size: 0.75rem;
+        padding: 0.5em 0 3em 0;
+        line-height: 1.4rem;
+    }
+    
+    #section1 .article2-left .web-table{
+        display: none;
+    }
+    #section1 .article2-left .mobile-table{
+        display: block;
+        font-size: 0.7rem;
+        margin-bottom: 2rem;
+    }
+    #section1 .article2-left .mobile-table th{
+        font-size: 0.8rem;
+    }
+    #section1 .article2-left .mobile-table td{
+        padding-right: 0.5em;
+    }
+    #section1 .article2-right{
+        width: 100%;
+        padding-left: 2%;
+        word-break: keep-all;
+    }
+
+    #section1 .article3 .article3-container{
+        flex-wrap: wrap;
+    }
+    #section1 .article3 .article3-box{
+        width: 70%;
+        margin: 0 auto;
+        border-bottom: 1px solid rgba(68, 68, 68, 0.486);
+    }
+
+    #section1 .article3 h4{
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+    }
+    
+
+    #section1 .article2-right .section2-right-item{
+        font-size: 0.75rem;
+    }
+    #section1 .article2-right #reservation-btn{
+        width: 80%;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        margin:0.5em 0 1em 1em;
+        }
+        #section1 .article2-right .section2-right-item ul li{
+            font-size: 0.65rem;
+
+        }
+
+}

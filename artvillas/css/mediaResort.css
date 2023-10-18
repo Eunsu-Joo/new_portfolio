@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media (max-width: 1280px){
+    #secion1{
+        background-color: antiquewhite;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+}
+
+
+
+
+@media (max-width: 480px){
+
+}

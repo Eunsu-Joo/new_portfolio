@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.main-sub-head {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.main-sub-head h3{
+    font-family: 'Nanum Gothic',sans-serif;
+    letter-spacing:3px;
+    font-size: 2.8rem ;
+    font-weight: 400;
+
+}
+.main-sub-head h4{
+    font-family: 'Domine',serif;
+    font-size: 2rem;
+    padding-top: 2rem;
+    color: #7c584c;
+}
+.main-sub-head1{
+    text-align: center;
+    padding-bottom: 2.8rem;
+}
+.main-sub-head1 h3{
+    font-family: 'Nanum Gothic',sans-serif;
+    letter-spacing:1px;
+    font-size: 2.4rem ;
+    font-weight: 400;
+
+}
+.main-sub-head1 h4{
+    font-family: 'Domine',serif;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    color: #7c584c;
+    text-transform: uppercase;
+}
+/* 아트빌라스 소개 타이틀 */
+#section1 .sub-navi{
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    z-index: 10;
+    text-align: right;
+    padding: 1rem;
+}

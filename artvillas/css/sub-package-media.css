@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    #section1{
+        font-size: 13px;
+    }
+    #section1 article{
+        padding: 0 1.5rem ;
+    }
+    #section2{
+        font-size: 13px;
+    }
+    #section2 .section2-btn{
+        width: 48%;
+        margin: 1rem 0 1rem 3rem;
+    }
+#section2 .section2-btn button{
+    font-size: 1rem ;
+}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #section1{
+        font-size: 12px;
+    }
+    #section1 article{
+        padding: 0 1.5rem ;
+    }
+    #section1 article .section1-contents h4{
+        font-size: 1.286rem;
+        padding: 1em 0;
+        font-weight: 500;
+      }
+      #section1 article .section1-contents .package-price{
+        font-size: 1.143rem;
+      }
+    #section2{
+        font-size: 12px;
+    }
+    #section2 article{
+        flex-wrap: wrap;
+    }
+    
+    #section2 article .section2-contents{
+        width: 100%;
+        order: 2;
+    }
+    #section2 article .section2-img{
+        width: 100%;
+        position: relative;
+        order: 1;
+    }
+    #section2 .section2-btn{
+        width: 80%;
+        margin: 2rem auto;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+    }
+#section2 .section2-btn button{
+    font-size: 1rem ;
+}
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    #section1{
+        font-size: 11px;
+    }
+    #section1 article .section1-contents h4{
+        font-size: 1.286rem;
+        padding: 1em 0;
+        font-weight: 500;
+      }
+      #section1 article .section1-contents .package-price{
+        font-size: 1.143rem;
+      }
+    #section2{
+        font-size: 11px;
+    }
+    #section2 article{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    #section2 article .section2-contents{
+        width: 100%;
+        order: 2;
+        padding: 1em;
+    }
+    #section2 article .section2-img{
+        width: 100%;
+        position: relative;
+        order: 1;
+    }
+    #section2 .section2-title-contents h3{
+        font-size: 1.286rem;
+    }
+    #section2 .section2-btn{
+        width: 90%;
+        margin: 2rem auto;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+#section2 .section2-btn button{
+    font-size: 1rem ;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+}

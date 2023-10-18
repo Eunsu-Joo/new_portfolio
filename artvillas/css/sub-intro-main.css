@@ -1,0 +1,187 @@
+@charset "UTF8";
+
+#section1{
+    width: 100%;
+    height: 700px;
+    font-weight: 300;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 95px;
+}
+
+#section1 article{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+#section1 article::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 0;
+}
+#section1 .sub-navi{
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    z-index: 10;
+    text-align: right;
+    padding: 1rem;
+}
+#section1 .section1-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #f1f1f3;
+    z-index:1 ;
+}
+
+#section1 .section1-top-title{
+    font-size: 1.167rem;
+    position: relative;
+    padding:  0.909em 0;
+}
+
+#section1 .section1-top-title::before,#section1 .section1-top-title::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    border-top: 2px solid #eee;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#section1 .section1-top-title::before{
+    top: 0;
+    }
+    
+#section1 .section1-top-title::after{
+bottom: 0;
+}
+
+#section1 .section1-contents h4{
+    font-size: 3.2rem ;
+    letter-spacing: 15px;
+    padding: 0.75em ;
+}
+
+#section1 .section1-contents p{
+    font-size: 1.667rem;
+    letter-spacing: 5px;
+    padding: 0.2em 0;
+}
+
+/* 미디어 쿼리 */
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    #section1 .section1-contents h4{
+        font-size: 2.8rem ;
+        letter-spacing: 10px;
+        padding: 0.75em ;
+        line-height: 3.5rem;
+    }
+    
+    #section1 .section1-contents p{
+        font-size: 1.667rem;
+        letter-spacing: 5px;
+        padding: 0.2em 0;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #section1{
+        height: 80vh;
+    }
+    #section1 article::before{
+        content: "";
+        width: 100%;
+        height: 99%;
+    }
+    #section1 .section1-top-title::before,#section1 .section1-top-title::after{
+        width: 70%;
+    }
+
+    #section1 .section1-top-title{
+        font-size: 1rem;
+        position: relative;
+        padding:  0.909em 0;
+    }
+
+    #section1 .section1-contents h4{
+        font-size: 2.4rem ;
+        letter-spacing: 10px;
+        padding: 0.75em ;
+        line-height: 3rem;
+    }
+    
+    #section1 .section1-contents p{
+        font-size: 1rem;
+        letter-spacing: 5px;
+        padding: 0.2em 0;
+    }
+    #section1 .section1-contents{
+        max-width: 700px;
+    }
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    #section1{
+        height: 60vh;
+    }
+    #section1 article::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+    }
+    #section1 .section1-top-title::before,#section1 .section1-top-title::after{
+        width: 70%;
+    }
+
+    #section1 .section1-top-title{
+        font-size: 0.75rem;
+        position: relative;
+        padding:  0.90em 0;
+    }
+
+    #section1 .section1-contents h4{
+        font-size: 2rem ;
+        letter-spacing: 10px;
+        padding: 1em 0.5em ;
+        line-height: 3rem;
+        margin: 0.3em;
+    }
+    
+    #section1 .section1-contents p{
+        font-size: 1rem;
+        letter-spacing: 5px;
+        padding: 0.2em 0;
+    }
+    #section1 .section1-contents{
+        max-width: 400px;
+    }
+    #section2 .section2-img-con::after{
+        display: none;
+    }
+    #section2 .section2-img-con::before{
+        width: 100%;
+        height: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #f1f1f3;
+        z-index: -10;
+        padding-top: 2rem;
+    }
+}

@@ -1,0 +1,123 @@
+
+/* 섹션3 */
+/* 스와이프 조작 */
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.swiper-wrapper{position:relative;
+    width:100%;
+    height:100%;
+    z-index:1;
+    display:flex;
+    transition-property:transform;
+    box-sizing:content-box}
+
+#section3{
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
+
+#section3 article{
+    width: 100%;
+    overflow: hidden;
+}
+
+#section3 article img{
+display: block;
+}
+
+.swiper-container-rooms > .swiper-pagination-bullets {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin: 1em 0;
+}
+
+ .rooms-img{
+    overflow: hidden;
+    height: 40%;
+}
+
+ .rooms-img img{
+    transition: transform 0.3s ease;
+}
+
+.swiper-container-rooms .swiper-slide:hover img{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+
+}
+
+.rooms-desc{
+    text-align: center;
+    background-color: #f1f1f3;
+}
+
+.rooms-desc h4{
+    font-size: 1.3rem;
+    padding: 0.5em 0;
+    letter-spacing: 1px;
+}
+
+.rooms-desc p{
+    padding: 0.5em 0 1em 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    .rooms-desc h4{
+        font-size: 1.1rem;
+    }
+    
+    .rooms-desc p{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .rooms h4{
+        font-size: 0.9rem;
+        padding: 0.5em 0;
+    
+    }
+    
+     .rooms-desc p{
+        padding: 0.75em 0;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .container{
+        padding: 1em;
+    }
+
+    .swiper-container-rooms .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+    }
+
+    .rooms-desc h4{
+        font-size: 1rem;
+        padding: 0.5em 0;
+    
+    }
+    
+     .rooms-desc p{
+        padding: 0.75em 0;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+    }
+}

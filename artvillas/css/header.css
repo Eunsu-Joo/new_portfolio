@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 해더 영역 */
+#header{
+    width: 100%;
+    height: 95px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+/* 해더 탑 */
+.header-top{
+    font-size: 0.8571rem;
+    height: 25px;
+    color: #f1f1f3;
+    background-color:  #7C584C;
+}
+.header-top .header-top-list{
+    display: flex;
+    justify-content: flex-end;
+}
+.header-top .header-top-item{
+    padding-right: 20px;
+    padding-top: 3px;
+}
+
+/* gnb 네비게이션 */
+
+.navi{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    font-size: 1.05rem;
+    background-color: #fff;
+    
+}
+/* h1 메인 로고 가운데 정렬 */
+.navi .logo{
+    width: 70px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navi .logo img{
+    width: 100%;
+}
+.navi a{
+    display: block;
+}
+.navi-list>li:nth-child(1),
+.navi-list>li:nth-child(2),
+.navi-list>li:nth-child(3){
+    float: left;
+}
+.navi-list>li:nth-child(4),
+.navi-list>li:nth-child(5),
+.navi-list>li:nth-child(6){
+    float: right;
+}
+.navi-list>li{
+    padding-top: 33px;
+    width: 160px;
+    height: 70px;
+    text-align: center;
+}
+.navi-list>li>a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.navi-list>li>a::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7c584ce1;
+    transition: opacity 0.3s ;
+}
+.navi-list>li.active>a{
+    font-weight: 500;
+}
+.navi-list>li.active>a::after{
+    width: 40px;
+    animation: ani 0.4s;
+}
+@keyframes ani{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 40px;
+    }
+}
+.navi-depth2 {
+    background-color: rgba(255,255,255,0.9);
+}
+.navi-depth2 li a{
+    line-height: 100%;
+    padding-bottom: 13px;
+    transition: all 0.3s;
+}
+.navi-depth2 li:nth-child(1){
+    padding-top: 13px;
+}
+.navi-depth2 li.active a:hover{
+    font-weight: 500;
+}

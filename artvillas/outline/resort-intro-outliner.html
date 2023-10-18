@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데리조트 인트로 아웃라이너</title>
+    <style>
+        #section-last{
+            width: 100%;
+            background-color: antiquewhite;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        #section-last article{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #section-last .box{
+            width: 50%;
+            outline: 1px solid black;
+        }
+        #section-last .box-desc{
+            word-break: keep-all;
+        }
+        #section-last .box-desc h4{
+            padding: 10px 0;
+            margin: 0;
+        }
+        #section-last p{
+            max-height: 5em;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 0;
+        }
+        #section-last article img{
+            width: 100%;
+        }
+
+        /* @media (max-width:1280px){
+
+        } */
+        
+
+
+    </style>
+</head>
+<body>
+    <section id="section1">
+        <h3>LOTTE RESORT </h3>
+    </section>
+    <section id="section2">
+        <h3>롯데 리조트 인트로</h3>
+        <article>
+            <h4>문화와 휴식이 함께하는 공간 롯데리조트</h4>
+        </article>
+    </section>
+    <section id="section3">
+        <h3>여유와 낭만, 편안한 휴식을 선사해줄 롯데리조트</h3>
+    </section>
+    <section id="section4">
+        <h3>롯데 프리미어 리조트</h3>
+        <article>
+            <h4>설악과 동해, 자연의 감성을 담은 롯데리조트 속초</h4>
+            <h4>백제의 신비로운 새로운 개념의 휴향 롯데리조트 부여</h4>
+            <h4>자연, 건축, 그리고 휴식, 롯데리조트 제주 아트빌라스</h4>
+            <h4>전원풍경의 아름다운을 느끼는 롯데 아라이리조트</h4>
+            <h4>사계절  에너제틱한 레저와 편안함이 있는 테마파크</h4>
+            <h4>롯데리조트만의 고품격 다이닝</h4>
+        </article>
+    </section>
+
+    <section id="section-last">
+        <div class="container">
+            <div class="padding">
+        <article>
+
+            <div class="box">
+                <img src="./images/sub/sub1-intro/resort-intro/resort-park.jpg" alt="">
+                <div class="box-desc">
+                <h4>리조트</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, alias. Reprehenderit dignissimos dolore voluptas possimus.
+                </p>
+            </div>
+            </div>
+            <div class="box">
+                <img src="./images/sub/sub1-intro/resort-intro/resort-park.jpg" alt="">
+                <h4>리조트</h4>
+                <p>리조트 설명</p>
+            </div>            <div class="box">
+                <img src="./images/sub/sub1-intro/resort-intro/resort-park.jpg" alt="">
+                <h4>리조트</h4>
+                <p>리조트 설명</p>
+            </div>            <div class="box">
+                <img src="./images/sub/sub1-intro/resort-intro/resort-park.jpg" alt="">
+                <h4>리조트</h4>
+                <p>리조트 설명</p>
+            </div>            <div class="box">
+                <img src="./images/sub/sub1-intro/resort-intro/resort-park.jpg" alt="">
+                <h4>리조트</h4>
+                <p>리조트 설명</p>
+            </div>            <div class="box">
+                <img src="./images/sub/sub1-intro/resort-intro/resort-park.jpg" alt="">
+                <h4>리조트</h4>
+                <p>리조트 설명</p>
+            </div> 
+        
+        
+        </article>
+    </div> 
+    </div> 
+    </section>
+    <strong>
+        #section > .container > .padding > article > .box >img , .box-desc(h4, p)
+        아티클에 flex 
+        .box-desc word-break: keep-all;
+        p 에             
+        max-height: 5em;
+        white-space: normal;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+    </strong>
+</body>
+</html>

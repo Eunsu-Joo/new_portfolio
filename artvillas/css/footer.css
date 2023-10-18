@@ -1,0 +1,106 @@
+/* footer 푸터 영역*/
+
+#footer { 
+    width: 100%; 
+    height: 267px; 
+    color: #333; 
+    font-size: 0.85rem;
+    display: -webkit-box; display: -ms-flexbox; 
+    display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; 
+    flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; 
+    align-items: center; 
+    margin-top: 100px;
+    }
+    
+    #footer .footer-top { 
+    width: 100%; 
+    height:65px; 
+    background-color: #f1f1f3; 
+    display: flex;
+    justify-content: center; }
+    
+    #footer .footer-top ul { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+    
+    #footer .footer-top ul #footer-logo {
+    width: 60px; }
+    
+    /* 푸터 중간 */
+
+    #footer .footer-info { 
+
+    height: 150px; 
+    display: flex;
+    overflow: hidden;
+}
+    
+    #footer .footer-info-left { 
+        width: 70%;
+        padding: 0.5em 0;
+        float: left;
+}
+#footer .footer-info-left ul>li>ul>li{
+    display: inline-block;
+    padding-right: 1.5em;
+
+}
+#footer .footer-info-left ul>li{
+    padding: 0.3em 0 1em 0;
+}
+
+    #footer .footer-info-right{
+        width: 30%;
+        padding-top: 1em;
+        float: right;
+    }
+    #footer .footer-info-right .footer-sns{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #footer .footer-info-right .footer-sns i{
+        font-size: 1.5rem;
+        opacity: 0.8;
+        transition: opacity 0.2s ease ;
+    }
+
+    #footer .footer-info-right .footer-sns i:hover{
+        opacity: 1;
+        transition: opacity 0.2s ease ;
+    }
+
+    #footer .footer-info-right .footer-select{
+        width: 60%;
+        margin: 0 auto;
+        margin: 1rem auto;
+    }
+
+    #footer .footer-info-right .footer-select select{
+        width: 100%;
+        height: 30px;
+    }
+    /* 푸터 바텀*/
+
+    #footer .footer-bottom { 
+    overflow: hidden; 
+    width: 100%; 
+    height: 70px; 
+    background-color: #444444; 
+    display: flex; 
+    justify-content: center; }
+    
+    #footer .footer-bottom ul { 
+    width: 70%; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; }
+    #footer .footer-bottom img{
+        width: 80%;
+    }
+ 

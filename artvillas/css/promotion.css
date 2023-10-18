@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+
+    /* 섹션4 콘텐츠 */
+
+.swiper-container-promotion{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide:hover .promotion-box-desc{
+    background: #444;
+    color: #f1f1f3;
+    transition: 0.3s ;
+}
+ .promotion-box-desc{
+    text-align: center;
+    margin-top: -5px;
+    transition: 0.3s ;
+}
+.promotion-box-desc h4{
+    font-size: 1.3rem;
+    padding: 0.5em 0;
+    font-weight: 500;
+}
+.promotion-box-desc h4 span{
+    font-size: 80%;
+}
+.promotion-box-desc p{
+    padding: 0.1em 0;
+}
+
+ .promotion-box-desc .promotion-desc-2{
+    padding-bottom: 1em;
+}
+
+
+.swiper-button-next-promotion,.swiper-button-prev-promotion{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    
+}
+.swiper-button-prev-promotion{
+    left: 30px;
+}
+.swiper-button-next-promotion{
+    right: 30px;
+}
+.fa-chevron-circle-right,
+.fa-chevron-circle-left{
+    font-size: 35px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.fa-chevron-circle-right:hover,
+.fa-chevron-circle-left:hover{
+    color: #7c584c;
+    transition: color 0.3s ease-in-out;
+}
+
+

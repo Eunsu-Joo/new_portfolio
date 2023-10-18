@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+
+/* 섹션2 */
+
+#section2{
+    width: 100%;
+    margin: 50px 0 100px 0;
+}
+#section2 article{
+    display: flex;
+}
+#section2 .main-sub-head1{
+    padding-top: 1.3rem !important;
+}
+#section2 .section2-box{
+    width: 33.3333%;
+    text-align: center;
+    background-color: #f1f1f3;
+    padding: 1.5em  1.5em 3em;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#section2 .section2-box:not(:nth-child(3))::after{
+    content: "";
+    border: 1px solid rgb(221, 221, 221);
+    height: 60%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#section2 .section2-box h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:'Nanum Gothic',sans-serif;
+    letter-spacing: 2px;
+    color: #7c584c;
+    padding: 1em 0 0.5em 0;
+}
+
+#section2 .section2-box h5{
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+    font-weight: 300;
+    padding: 0.7em;
+}
+
+#section2 .section2-box p{
+    line-height: 1.5em;
+    font-size: 1.1rem;
+}
+
+
+/* 섹션3 */
+
+#section3{
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#section3 article{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 65px;
+}
+
+#section3 article img{
+display: block;
+}
+
+#section3 .swiper-container-horizontal > .swiper-pagination-bullets {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin: 1em 0;
+}
+
+#section3  .section3-img{
+    overflow: hidden;
+    height: 40%;
+}
+
+#section3 .section3-img img{
+    transition: transform 0.3s ease;
+}
+
+#section3 .swiper-slide:hover img{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+
+}
+
+#section3 .section3-desc{
+    text-align: center;
+    background-color: #f1f1f3;
+}
+
+#section3 .section3-desc h4{
+    font-size: 1.5rem;
+    padding: 0.5em 0;
+
+}
+
+#section3 .section3-desc p{
+    padding-bottom: 1.2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#section4 article{
+    width: 100%;
+    background-color: #eee;
+    padding: 50px 0;
+}
+
+

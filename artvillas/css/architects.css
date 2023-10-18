@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+#section2{
+    width: 100%;
+    position: relative;
+}
+
+#section2::before{
+    content: "";
+    width: 100%;
+    height: 90vh;
+    background-color: #eee;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#section2 .section2-sub-title{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2em;
+    letter-spacing: 3px;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+#section2 article{
+    width: 100%;
+    height: 648px;
+    position: relative;
+    margin: 20px 0;
+}
+
+#section2 .main-sub-head{
+    font-family: 'Poppins';
+    padding-top: 3rem !important;
+}
+
+#section2 article .section2-box{
+    width: 39%;
+    height: 580px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+
+}
+
+#section2 .section2-article1,#section2 .section2-article3{
+    right: 5%;
+}
+#section2 .section2-article2,#section2 .section2-article4{
+    left: 5%;
+}
+
+#section2 .section2-article2{
+    top: -10%;
+}
+
+#section2 .section2-article3{
+    top: -10%;
+}
+#section2 .section2-article4{
+    top: -10%;
+}
+#section2 .section2-article5{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section2 article .section2-text-box,
+#section2 article .section2-img
+{
+    position: absolute;
+    bottom: -1px;
+}
+
+#section2 .last-article{
+    margin-top: -44%;
+}
+
+#section2 article .section2-text-box{
+    width: 70%;
+    left: 0;
+
+    background-color: rgba(0,0,0,0.5);
+    color: #f1f1f3;
+    padding: 1em;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+#section2 article .section2-text-box h4{
+    font-size: 1.2rem;
+    padding: 1em 0;
+}
+
+#section2 article .section2-text-box p{
+    line-height: 1.3rem;
+    font-size: 0.95rem;
+}
+
+#section2 article .section2-img{
+    width: 30%;
+    right: 0;
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#section1 .section1-btn-area{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #7c584c;
+    padding: 1em 1.5em;
+
+}
+#section1 .section1-btn-area a{
+    display: block;
+    width: 100%;
+}
+#section1 .section1-btn-area button{
+    font-size:  1.143rem ;
+    color: #eee;
+}

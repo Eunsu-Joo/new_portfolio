@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@media (min-width: 1025px) and (max-width: 1280px){
+.container{
+    width: 90%;
+    font-size: 0.9rem;
+}
+
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+    
+    #section1 article p{
+        font-size: 0.8rem;
+        word-break: keep-all;
+        word-spacing: normal;
+    }
+    #section1 article h4{
+        font-size: 1.4rem;
+    }
+    #section2 article h4{
+        font-size: 1.2rem;
+    }
+    #section2 article{
+        font-size: 0.8rem;
+    }
+    #section2 article img{
+        height: 100%;
+    }
+
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .container{
+        width: 90%;
+        font-size: 0.7rem;
+    }
+    #section1 img{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #section1 article p{
+        margin-bottom: 1em;
+        word-break: keep-all;
+        font-size: 0.7rem;
+    }
+
+    #section1 article h4{
+        font-size: 1rem;
+    }
+    #section1 article p{
+        line-height: 1.2rem;
+    }
+    #section2 article{
+        font-size: 0.8rem;
+    }
+    #section2 article h4{
+        font-size: 0.95rem;
+        text-align: center;
+    }
+    #section2 article .section2-contents{
+        flex-wrap: wrap;
+    }
+    #section2 article .section2-img{
+        width: 100%;
+    }
+    #section2 article .section2-text{
+        width: 100%;
+    }
+    #section2 article .section2-text table th{
+        width: 50%;
+    }
+    #section2 article .section2-text table{
+        padding-bottom: 2em;
+    }
+}

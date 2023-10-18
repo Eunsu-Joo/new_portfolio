@@ -1,0 +1,337 @@
+@charset "UTF-8";
+main{
+    width: 100%;
+}
+/* section1 메인 이미지 */
+#section1{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    color: #f1f1f3;
+    z-index: 0;
+    margin-top: 100px;
+}
+
+#section1 article{
+    width: 100%;
+    height: 100%;
+}
+/* 섹션1 콘텐츠 부분 */
+#section1 .section1-text{
+    width: 100%;
+    text-align: left;
+    margin-top: 6rem;
+    margin-left: 6rem;
+}
+
+/* 섹션1 상단 타이틀 */
+
+#section1 .section1-text .section1-sub-title {
+    margin: 1rem 0;
+    position: relative;
+    text-align: center;
+    line-height: 1.5rem;
+    width: 300px;
+    font-size: 1.1rem;
+}
+#section1  .section1-text .section1-sub-title::before {
+    content: "";
+    width: 100%;
+    border: 1px solid #f1f1f3;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    }
+
+    #section1  .section1-text  .section1-sub-title::after {
+    content: "";
+    width: 100%;
+    border: 1px solid #f1f1f3;
+    position: absolute;
+    bottom: -10px;
+    left: 0; }
+
+#section1  .section1-text h2 {
+    font-size: 3.3rem;
+    padding: 0.5em 0;
+    letter-spacing: 7px;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#section1  .section1-text h4 {
+    font-size: 1.5rem;
+    padding: 1em 0;
+    letter-spacing: 3px; 
+}
+#section1  .section1-text .section1-desc{
+    padding: 0.6em 0;
+    line-height: 25px;
+    font-size:1.286rem;
+}
+#section1  .section1-text .more {
+    font-size: 1.429rem;
+    padding: 1em 0;
+    transition: 0.3s ease-in; 
+}
+
+#section1  .section1-text .more span {
+margin-right: 5px;
+}
+
+#section1  .section1-text .more:hover {
+color: #444444;
+transition: 0.3s ease-in; 
+}
+
+
+/* section2 예약 */
+
+#section2{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background-color:#7c584cda;
+    
+}
+
+#section2 article{
+    width: 100%;
+    background-color: #f1f1f3;
+    padding: 0 1%;
+    position: relative;
+    transform: translateY(14px);
+    box-shadow: 1px 1px 3px rgba(255,255,255,0.6);
+}
+
+
+
+/* 예약 테이블 */
+#section2 article table{
+    text-align: center;
+    width: 85%;
+    font-size: 1rem;
+    
+}
+#section2 article table  th{
+    padding: 0.5em 0.3em;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+#section2 article table tr td{
+    padding: 1em 0.3em;
+}
+#section2 article table tr td .count{
+    font-size: 1rem;
+    padding:0 0.3em;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+#section2 article table tr td .count:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#section2 article table tr td .fa-minus{
+    transform: translateX(-10px);
+}
+#section2 article table tr td .fa-plus{
+    transform: translateX(10px);
+}
+#section2 article table tr .table{
+    position: relative;
+    left: 5%;
+}
+#section2 article table tr .table::after{
+    content: "";
+    width: 60%;
+    border-bottom: 1px solid #878787;
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+}
+#section2 article table input[type = 'date']{
+    visibility: hidden;
+}
+
+#section2 article table #date1,
+#section2 article table #date2{
+    display: inline;
+    font-size: 1.5rem;
+    margin-left: 2px;
+}
+
+/* 예약 버튼 */
+#section2 .section2-btn{
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    padding: 0 1em;
+
+}
+#section2 .section2-btn input[type = "button"]{
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    padding: 0.7em;
+    background-color: #7C584C;
+    color: #eee;
+    cursor: pointer;
+    transform: translateY(-30%);
+}
+
+/* 모바일 테이블 안보이게 설정 */
+#section2 .mobile-reservation-table{
+    display: none;
+
+}
+
+/* section3 호텔 소개 */
+
+
+#section3{
+    width: 80%;
+    position: relative;
+    margin: 30px auto 15px auto;
+}
+
+#section3 article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#section3 .section3-text{
+    width: 40%;
+    background-color: #f1f1f3;
+    margin: 60px 0;
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section3 .section3-text h3{
+    font-size: 2.143rem;
+    padding: 1em 0;
+    font-weight: 500;
+    color: #7C584C;
+    letter-spacing: 5px;
+}
+#section3 .section3-text h4{
+    font-size: 1.3rem;
+    padding: 0.5em 0;
+}
+#section3 .section3-text p{
+    padding: 1.1em 0;
+    line-height: 1.8rem;
+    font-size:1.143rem ;
+}
+#section3 .section3-img{
+    width: 55%;
+    box-shadow: 3px 5px 2px rgba(0,0,0,0.4);
+}
+#section3 .section3-img img{
+    width: 100%;
+}
+
+/* section */
+
+#section4{
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
+    padding-bottom: 50px;
+}
+/* 이미지 영역을 보이기 하기 위해 아티클에 오버 플로우 */
+
+#section4 article{
+overflow: hidden;
+}
+.swiper-container1{
+    overflow: hidden;
+}
+.swiper-container1 .swiper-slide{
+    width: 100%;
+    height: 450px;
+}
+.swiper-container1 .swiper-slide img{
+    width: 100%;
+}
+/* section4 text */
+#section4 .section4-room-text{
+    width: 100%;
+    text-align: center;
+    background-color:rgba(0,0,0,0.5);
+    color: #f1f1f3;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    word-break: keep-all;
+    text-align: left;
+    padding: 10px ;
+    letter-spacing: -1px;
+    z-index: 10;
+}
+#section4 .section4-room-text h4{
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.6em 0;
+    letter-spacing: 3px;
+    max-height: 2em;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+#section4 .section4-room-text p{
+    line-height: 1.5rem;
+
+}
+#section4 .room-btn{
+    width: 60px;
+    height: 40px;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    color: #7C584C;
+    background-color:#eee;
+    z-index: 1000;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ;
+}
+#section4 .swiper-button-next1{
+  right: -70px;
+}
+#section4 .swiper-button-prev1{
+    left: -70px;
+  }
+  #section4 .room-btn:hover{
+      color: #eee;
+      background-color: #7C584C;
+  }
+/* section5 프로모션 */
+
+#section5{
+    width: 100%;
+    position: relative;
+}
+#section5 article{
+    width: 100%;
+    background-color: #f1f1f3;
+    padding: 50px 0;
+}
+#section5 .main-sub-head{
+    margin-bottom: 50px;
+}
+
+
+
+

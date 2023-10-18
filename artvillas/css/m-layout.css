@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+/* 모바일 레이아웃 */
+header{
+
+position: relative;
+
+}
+
+header >h1{
+    padding: 5px 0 0 5px;
+}
+
+
+/* 토글버튼  */
+label[for=toggle]{
+    position: absolute;
+    right: 30px;
+    top: 65px;
+}
+i.fa-bars{
+    font-size: 40px;
+    padding: 5px;
+    color: #7C584C;
+}
+#toggle{
+    display: none;
+}
+/* 닫기버튼 */
+.mobile-navi > label[for=toggle]{
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    font-size: 25px;
+    z-index: 200;
+}
+.mobile-navi i.fa-times{
+    font-size: 25px;
+    transition: 0.8s;
+    
+}
+.mobile-navi > label[for=toggle]:hover i.fa-times{
+    transform: rotate(180deg);
+}
+
+#mobile-logo{
+    width: 80px;
+    position: absolute;
+    left: 25%;
+    margin-top: 10px;
+    z-index: 200;
+}
+.toggle-btn{
+    display: none;
+}
+/* 네비게이션 */
+
+
+nav.mobile-navi{
+    width: 100%;
+    height: 100%;
+    /* 위치고정 */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* 바깥으로 내보내기 */
+    transition: 0.5s;
+    font-size: 14px;
+    z-index: 100;
+}
+
+.mobile-navi .mobile-navi-list{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #eee;
+    padding: 100px 0 0 30px;
+}
+
+.mobile-navi .mobile-navi-list .navi-item{
+    width: 100%;
+    height: 40px;
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 5px;
+   
+}
+.mobile-navi .mobile-navi-list .navi-item a{
+    display: block;
+    /* height: 1rem; */
+    font-size: 14px;
+    position: relative;
+    /* border: 1px solid white; */
+}
+
+.navi-item .fas{
+    font-size: 22px;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    transition: 0.3s;
+    color: #7C584C;
+    
+}
+
+/* 햄버거 메뉴 클릭시 체크박스 체크 */
+
+#toggle:checked ~ .mobile-navi{
+    right: 0;
+}
+
+/* 네비 체크박스로 메뉴 보이게 하기 */
+input[type=checkbox]{
+    display: none;
+}
+.gnb-content{
+    padding: 0;
+    border-bottom: 1px solid #7c584c98;
+}
+
+.gnb-content ul li a{
+    padding-left: 5px;
+    display: block;
+    border-bottom: 1px solid #7c584c98;
+}
+
+
+label{
+    display: block;
+    cursor: pointer;
+    
+}
+
+#navi-checkbox1:checked ~ #checkbox1{
+    height: 200px;
+}
+#navi-checkbox1:checked ~ #checkbox1 a label i{
+    transform: rotate(-180deg);
+transition: 0.3s;}
+#navi-checkbox2:checked ~ #checkbox2{
+    height: 200px;
+}
+#navi-checkbox2:checked ~ #checkbox2 a label i{
+    transform: rotate(-180deg);
+transition: 0.3s;}
+#navi-checkbox3:checked ~ #checkbox3{
+    height: 200px;
+}
+#navi-checkbox3:checked ~ #checkbox3 a label i{
+    transform: rotate(-180deg);
+transition: 0.3s;}
+#navi-checkbox4:checked ~ #checkbox4{
+    height: 200px;
+}
+#navi-checkbox4:checked ~ #checkbox4 a label i{
+    transform: rotate(-180deg);
+transition: 0.3s;}
+#navi-checkbox5:checked ~ #checkbox5{
+    height: 200px;
+    
+}#navi-checkbox5:checked ~ #checkbox5 a label i{
+    transform: rotate(-180deg);
+transition: 0.3s;}
+
+
+/* 클릭 시 닫기 로테이트
+1. 아이콘에 transition
+2. 라벨 태그했을 때 아이콘 회전
+ */
+
+ /* 체크박스로 햄버거 메뉴 만들기
+ 1 ) 같은 위치에 라벨 체크박스 만들기 / 네비 라벨 만들기
+ 2) 네비게이션 나타낼 메뉴 position : fixed ; 옆으로 밀어넣기
+ 3) 체크박스 숨기고 체크했을때 네비게이션이 나타나게 함
+ 4) 이때 라벨과 체크박스의 아이디는 같음.
+ */

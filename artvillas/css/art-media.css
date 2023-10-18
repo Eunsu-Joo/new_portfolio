@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    #section2 .section2-box p{
+        font-size: 0.81rem;
+    }
+    
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+
+    #section2 article{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #section2 .section2-box h4{
+        font-size: 1.3rem;
+    }
+    #section2 .section2-box h5{
+        font-size: 0.9rem;
+    }
+    #section2 .section2-box{
+        width: 60%;
+    }
+    
+    #section2 .section2-box p{
+        font-size: 0.78rem;
+    }
+
+    #section2 .section2-box:not(:nth-child(3))::after{
+        height: 0;
+        top: 99%;
+        width: 90%;
+        transform: translatex(50%) translateY(0);
+        right: 50%;
+    }
+
+    #section3 .container{
+        width: 90%;
+    }
+
+    #section3 .section3-desc h4{
+        font-size: 1rem;
+        padding: 0.5em 0;
+    
+    }
+    
+    #section3 .section3-desc p{
+        padding: 0.75em 0;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    #section2 .container{
+        width: 90%;
+    }
+    #section2,#section3,#section4{
+        margin: 20px 0;
+    }
+    #section2 article{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #section2 .section2-box{
+        width: 100%;
+        position: relative;
+        font-size: 0.7rem;
+    }
+    
+    #section2 .section2-box:not(:nth-child(3))::after{
+        height: 0;
+        top: 99%;
+        width: 90%;
+        transform: translatex(50%) translateY(0);
+        right: 50%;
+    }
+
+    #section3 .swiper-pagination-bullet{
+        width: 7px;
+        height: 7px;
+
+    }
+
+    #section3 .section3-desc h4{
+        font-size: 1rem;
+        padding: 0.5em 0;
+    
+    }
+    
+    #section3 .section3-desc p{
+        padding: 0.75em 0;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+    }
+
+}

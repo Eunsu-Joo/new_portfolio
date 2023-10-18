@@ -1,0 +1,119 @@
+
+#section1{
+    width: 100%;
+    font-family: 'Nanum Gothic',sans-serif;
+    margin-bottom: 100px;
+}
+
+#section1 article{
+    text-align: center;
+    font-size: 1rem;
+}
+
+#section1 article h4{
+    font-size: 1.5rem;
+    padding: 1em 0;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #7c584c;
+    opacity: 0.9;
+}
+
+#section1 article p{
+    line-height: 1.5rem;
+}
+
+/* 섹션2 */
+
+#section2{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+#section2  #section2-title{
+    font-size: 1.7rem;
+    padding: 1em 0;
+    text-align: center;
+    letter-spacing:3px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#section2  #section2-title::after{
+    content: "";
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid #eee;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#section2 article{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}
+
+#section2 article .section2-left-content,#section2 article .section2-right-content{
+    width: 40%;
+    margin: 30px 0;
+}
+
+#section2 article table{
+    width: 100%;
+}
+
+#section2 article table th{
+    font-weight: 400;
+    padding: 0 1.5em;
+    border-right: 1px solid #eee;
+}
+
+#section2 article table td{
+    line-height: 1.5rem;
+    padding: 1em 1.25em;
+    word-break: keep-all;
+}
+
+#section2 article p{
+    padding: 0.25em 0;
+}
+
+#section2 article .section2-right-content table{
+    margin-bottom: 15px;
+}
+
+#section3{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#section3 #section3-title{
+    font-size: 1.7rem;
+    padding: 1em 0;
+    text-align: center;
+    letter-spacing:3px;
+    background-color: #eee;
+}
+
+#section3 article{
+    font-size: 0.9rem;
+}
+
+#section3 article h4{
+    font-size: 1.05rem;
+    padding: 1em 1.5em 0.5em 1.5em;
+}
+
+#section3 article p{
+    padding: 0.3em 1.5em;
+}
+
+#section4 article{
+    width: 100%;
+    background-color: #f1f1f3;
+    padding: 50px 0;
+}

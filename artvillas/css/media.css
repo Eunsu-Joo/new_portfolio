@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    #section1{
+        width: 100%;
+        height: calc(85vh - 135px);
+        position: relative;
+        color: #f1f1f3;
+        z-index: 0;
+        margin-top: 130px;
+    }
+    #section1 article{
+        height: 100%;
+    }
+    #section1  .section1-text h2 {
+        font-size: 2.5rem;
+
+    }
+    #section1 .section1-text{
+        margin-left: 3rem;
+}
+#section1  .section1-text h4 {
+    font-size: 1.3rem;
+    padding: 0.8em 0;
+    letter-spacing: 3px; 
+}
+#section1  .section1-text .section1-desc{
+    padding: 0.6em 0;
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+#section2 .section2-btn input[type = "button"]{
+    font-size: 1.2rem;
+    border: none;
+    width: 130px;
+    padding: 0.5em 0;
+    margin-left: 1.5rem;
+}
+
+#section3 article{
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#section3 .section3-text h3{
+    font-size: 1.7rem;
+    padding: 1em 0;
+    font-weight: 500;
+    color: #7C584C;
+    letter-spacing: 5px;
+}
+#section3 .section3-text h4{
+    font-size: 1.2rem;
+    padding: 0.5em 0;
+}
+#section3 .section3-text p{
+    padding: 1.1em 0;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+#section6 .section6-membership-content{
+    width: 80%;
+    background-color: #eee;
+    padding: 0 1em;
+}
+#section6 .section6-membership-content img{
+    width: 100px;
+    padding: 0 5% 0 0%;
+}
+#section6 .section6-btn{
+    font-size: 1.2rem;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #section1{
+        width: 100%;
+        height: calc(85vh - 135px);
+        position: relative;
+        color: #f1f1f3;
+        z-index: 0;
+        margin-top: 130px;
+    }
+    #section1 article{
+        height: 100%;
+    }
+
+    #section1 .section1-text{
+        margin-top: 3rem;
+    }
+    #section1  .section1-text h2 {
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+    #section1 .section1-text .section1-sub-title {
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+    #section1 .section1-text{
+        margin-left: 1.5rem;
+}
+#section1  .section1-text h4 {
+    font-size: 1.1rem;
+    padding: 0.5em 0;
+}
+#section1  .section1-text .section1-desc{
+    padding: 0.6em 0;
+    font-size: 0.85rem;
+}
+#section1  .section1-text .more {
+    font-size: 1.1rem;
+    padding: 1em 0;
+}
+#section2{
+    margin:  30px 0;
+}
+#section2 article form{
+flex-wrap: wrap;
+}
+#section2 article table{
+width: 90%;
+margin-bottom: 1.5rem;
+}
+#section2 .section2-btn {
+width: 60%;
+margin: 0;
+}
+
+#section2 .section2-btn input[type = "button"]{
+    font-size: 1.2rem;
+    border: none;
+    width: 100%;
+    padding: 0.5em 0;
+
+}
+#section3 article{
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+}
+#section3 .section3-text{
+    width: 100%;
+    text-align: center;
+    margin:  0;
+    order: 2;
+}
+
+#section3 .section3-text h3{
+    position: relative;
+}
+
+#section3 .section3-text h3::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid #7C584C;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.6;
+}
+#section3 .section3-text h4{
+    margin-top: 1rem;
+}
+#section3 .section3-img{
+    width: 100%;
+    order: 1;
+}
+#section6 article{
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+}
+#section6 .section6-membership-content{
+    width: 100%;
+    padding: 0.5em 2em;
+}
+#section6 .section6-btn{
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.1rem;
+}
+#section6 .section6-membership-content p{
+    font-size: 1rem;
+}
+#section6 .section6-membership-content img{
+    width: 80px;
+    padding: 0 5% 0 0%;
+}
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    #section1{
+        width: 100%;
+        height: calc(85vh - 135px);
+        position: relative;
+        color: #f1f1f3;
+        z-index: 0;
+        margin-top: 130px;
+    }
+    #section1 .swiper-slide {
+        background-position: 50% -50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #section1 article{
+        height: 100%;
+    }
+    #section1 .section1-text{
+        width: 90%;
+        margin: 1.5rem auto;
+        border: 1px solid black;
+
+}
+
+    #section1  .section1-text h2 {
+        font-size: 1.2rem;
+    }
+    #section1 .section1-text .section1-sub-title {
+        margin: 1rem 0;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+#section1  .section1-text h4 {
+    font-size: 0.9rem;
+    padding: 0.3em 0;
+}
+#section1  .section1-text .section1-desc{
+    padding: 0.6em 0;
+    font-size: 0.85rem;
+}
+#section1  .section1-text .more {
+    font-size: 0.9rem;
+    padding: 0.5em 0;
+}
+.swiper-button-next,.swiper-button-prev{
+    position:absolute;
+    transform: translateX(-50%);
+}
+
+.swiper-button-next{
+    left: 80%;
+}
+.swiper-button-prev{
+    left: 20%;
+}
+.swipe-number{
+    position: absolute;
+left: 60%;
+transform: translateX(-50%);
+}
+}

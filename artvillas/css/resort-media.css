@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    .container{
+        width:95%;
+    }
+    #section2 .section2-text-con{
+        padding-left: 1.75rem;
+    }
+    
+    #section2 .section2-text-con h4{
+        font-size:  2rem;
+        letter-spacing: 2px;
+        line-height: 1.2em;
+        padding: 0.5em 0;
+    }
+    #section2 .section2-text-con p{
+        font-size: 0.85rem;
+        padding: 1em 0;
+    }
+
+    /* 섹션 4*/
+    #section4 article{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #section4 .section4-box{
+        width: 49%;
+        background-color: #f1f1f3;
+        padding-bottom: 1.8em;
+        margin: 0.3em;
+        min-height: 5em;
+        padding: 0.2em;
+    }
+    #section4 .section4-box h4{
+        font-size: 1.25rem;
+    }
+    #section4 .section4-box p{
+        font-size: 0.85rem;
+    }
+    #section4 .section4-box p:nth-last-child(1){
+        padding-bottom: 1.7em;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+    #section2 .section2-text-con{
+        padding-left: 0.8rem;
+    }
+    
+    #section2 .section2-text-con h4{
+        font-size:  1.4rem;
+        letter-spacing: 2px;
+        line-height: 1.2em;
+        padding: 0.5em 0;
+    }
+    #section2 .section2-text-con p{
+        font-size: 0.72rem;
+        padding: 0.8em 0.4em;
+        word-break: keep-all;
+        
+    }
+    #section3 article h4{
+        font-size: 1.6rem;
+        padding: 0.8em 0;
+        font-weight: 600;
+    }
+    
+    #section3 article p{
+        font-size: 0.8rem;
+        padding: 0.2em 0;
+    }
+
+    #section4{
+        margin-bottom: 50px;
+    }
+
+    #section4 article{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #section4 .section4-box{
+        width: 48.8%;
+        background-color: #f1f1f3;
+        padding-bottom: 1.8em;
+        margin: 0.3em;
+        padding: 0.2em;
+    }
+    #section4 .section4-box .section4-box-desc{
+        max-height: 13rem;
+    }
+    #section4 .section4-box h4{
+        font-size: 0.95rem;
+    }
+    #section4 .section4-box p{
+        font-size: 0.75rem;
+        line-height: 1rem;
+        letter-spacing: -1px;
+    }
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    #section2 article{
+        display: flex;
+        flex-direction: column;
+    }
+    #section2 .section2-img-con{
+        width: 100%;
+        float: none;
+    }
+    #section2 .section2-text-con{
+        float: none;
+        width: 100%;
+    }
+    #section2 .section2-text-con{
+        padding-left: 1rem;
+        text-align: center;
+    }
+    
+    #section2 .section2-text-con h4{
+        font-size:  1.3rem;
+        letter-spacing: 2px;
+        line-height: 1.5em;
+        padding: 0.5em 0;
+    }
+    #section2 .section2-text-con p{
+        font-size: 0.72rem;
+        padding: 1.3em 1em;
+        word-break: keep-all;
+        text-align: left;
+        line-height: 1.7em;
+        
+    }
+
+    #section3 article{
+        width: 100%;
+        height: 50vw;
+        text-align: left;
+        left: 0 ;
+        bottom: 0;
+        padding: 1em;
+        word-break: keep-all;
+
+    }
+
+
+    #section3 article h4{
+        font-size: 1rem;
+        padding: 0.8em 0;
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+    
+    #section3 article p{
+        font-size: 0.72rem;
+        padding: 0.2em 0;
+    }
+    #section4{
+        margin-bottom: 50px;
+    }
+
+    #section4 article{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #section4 .section4-box{
+        width: 100%;
+        background-color: #f1f1f3;
+        padding-bottom: 1.8em;
+        margin: 0.3em;
+        padding: 0.2em;
+    }
+    #section4 .section4-box .section4-box-desc{
+        max-height: 13rem;
+    }
+    #section4 .section4-box h4{
+        font-size: 0.95rem;
+    }
+    #section4 .section4-box p{
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+    #section4 .section4-box p:nth-last-child(1){
+        padding-bottom: 1.5em;
+    }
+}
