@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+/* 공통서식 */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    font-family:'san_francisco_display',sans-serif ;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+ul,li{
+    list-style: none;
+}
+
+/* 콘테이너 서식  - 가운데 정렬*/
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.8rem;
+
+    /* 22px */
+}
+
+
+/* 해더 */
+header{
+    width: 100%;
+    height: 4.4rem;
+    /* 44px */
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    background-color: rgba(0,0,0,0.92);
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+}
+header .container{
+    transform: translate3d(7.4rem,0,0);
+}
+header a:hover{
+    text-decoration: none;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.nav-mobile{
+    display: none;
+}
+.nav-link{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity 0.5s;
+    opacity: 0.7;
+}
+.nav-link:hover{
+    opacity: 1;
+}
+/* 애플로고 */
+.nav-link-apple{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url(../imgs/icons/apple.svg) center no-repeat;
+}
+.nav-link-search{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url(../imgs/icons/search.svg) center no-repeat;
+}
+.nav-link-bag{
+    width: 1.4rem;
+    height: 4.4rem;
+    background: url(../imgs/icons/bag.svg) center no-repeat;
+}
+/* 노티스 */
+.notice{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.3em 0;
+    background-color: #f5f5f7;
+    letter-spacing: -.05rem;
+}
+.notice p{
+    font-size: 1.4rem;
+}
+
+.notice a{
+    display: inline;
+    color: #06c;
+}
+
+/* 아이폰12,pro */
+.iphone-12{
+    background-image: url(../imgs/iphone12/iphone-large.jpg) ;
+    margin-top: 4.4rem;
+    position: relative;
+}
+.iphone-12-pro{
+    background-image: url(../imgs/iphone12-pro/iphone12-pro-large.jpg);
+}
+/* 와치 */
+.watch{
+    background-image: url(../imgs/watch/watch-large.jpg);
+}
+.title-head-watch{
+    height: 7.8rem;
+    background: url(../imgs/watch/logo_watch_medi.png) center no-repeat;
+    background-size: auto 7.8rem;
+    margin-top: 1.6rem;
+}
+/* 아이폰12 타이틀 */
+.title{
+    color: #171718;
+    text-align: center;
+    padding-top: 5.5rem;
+    /* 55px */
+}
+.title-head{
+    font-size: 5.6rem;
+    /* 56px */
+    line-height: 1.07143;
+    letter-spacing:- .005rem;
+}
+.title-sub-head{
+    font-size: 2.35rem;
+    margin-top: .6rem;
+    letter-spacing: .008rem;
+    font-weight: 600;
+    letter-spacing: -.1rem;
+}
+.title-price{
+    font-size: 1.7rem;
+    margin-top: .68rem;
+    color: #888;
+}
+.title-dark{
+    color: #fff;
+}
+/* 버튼 */
+.cta{
+    text-align: center;
+    margin-top: 1.8rem;
+}
+.cta-link{
+    font-family: 'san_francisco_textSBdIt',sans-serif!important;
+    color: #06c;
+    font-size: 1.8rem;
+    letter-spacing: -.1rem;
+    display: inline-block;
+    font-weight: 400;
+    position: relative;
+}
+.cta-link span{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: .9rem;
+    right: -1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+.cta-link span{
+    background-image: url(../imgs/icons/arrow1.png);
+}
+.cta-link-dark:hover{
+    border-bottom-color: #06c;
+}
+.cta-link:nth-child(2){
+    margin-left: 2.6rem;
+}
+
+/* 공통으로 들어가는 섹션 배경 서식 */
+.hero{
+    background-size: auto 73.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .6rem solid #fff;
+    border-bottom: .6rem solid #fff;
+    height: 69rem;
+    /* 690px */
+}
+.iphone-12{
+    border-bottom: none;
+    border-top: none;
+}
+/* 그리드 영역 */
+/* height 69rem */
+/* 공통영역 : h4(grid-title-head),h5(grid-sub-head) ,cta */
+/* 
+container:max-width : 43rem
+marginTop : 5.2rem / 
+h4 : 4rem
+h5: 2.1rem letter-spacing: .016em; margin-top: .4rem;
+margin-top: .6rem;
+lineHeight : 1.1
+
+*/
+
+/* 그리드 타이틀 */
+.grid-title{
+    margin-top: 4.2rem;
+}
+.grid-head{
+    font-size: 4.3rem;
+    line-height: 1.07143;
+    letter-spacing:-.12rem;
+}
+.grid-sub-head{
+    font-size: 2.1rem;
+    letter-spacing: .008rem;
+    letter-spacing: -.1rem;
+    margin-top: .6rem;
+}
+/* 그리드 콘테이너 */
+.grid-hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.2rem;
+    border-left: .6rem solid #fff;
+    border-right: .6rem solid #fff;
+}
+.grid-container{
+    max-width: 43rem;
+    margin: 0 auto;
+    text-align: center;
+}
+/* 그리드 콘텐츠 */
+.module-contents{
+        background-size:auto 57.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 49rem;
+}
+
+.event{
+    background-image: url(../imgs/ect/event_large.jpg);
+    background-size:auto 33.5rem;
+    background-position: bottom;
+    position: relative;
+    /* */
+}
+
+.event::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#fbfbfd  ;
+    z-index: -1;
+}
+.ipad{
+    background-image: url(../imgs/ect/pad-large.jpg);
+}
+
+.macPro{
+    background-image: url(../imgs/ect/pro-large.jpg);
+}
+.macAir{
+    background-image: url(../imgs/ect/air-large.jpg);
+}
+.airPods{
+    background-image: url(../imgs/ect/airpot-large.jpg);
+}
+.watchs{
+    background-image: url(../imgs/ect/watch_large.jpg);
+}
+.grid-watch{
+    height: 7.8rem;
+    background: url(../imgs/icons/watch-logo.png) center no-repeat;
+    background-size: auto 7.8rem;
+    margin-top: 1.6rem;
+}
+/* 그리드 버튼 */
+.module-contents .cta-link{
+    font-size: 1.4rem;
+}
+.module-contents .cta-link span{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: .5rem;
+    right: -1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+.blind{
+    display: none;
+}
+
+/* 푸터 */
+footer{
+    width: 100%;
+    background-color: #f5f5f7;
+    font-size: 1.2rem;
+    padding-bottom: 4rem;
+}
+.footer-container{
+
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.8rem;
+
+}
+.footer-contents {
+    padding: 1.7rem 0 1.1rem 0;
+    border-bottom: 1px solid #d2d2d7;
+}
+.footer-contents p{
+    color: #86868b;
+    word-break: keep-all;
+    padding-bottom: 0.96rem;
+}
+.footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-item .pd{
+    padding-top: 2.4rem;
+}
+.footer-item{
+    width: 20%;
+    padding-top: 2rem;
+}
+.footer-item h3{
+    letter-spacing: 0em;
+    line-height: 1.33337;
+    font-weight: 600;
+margin-right: 2rem;
+margin-bottom: 0.96rem;
+font-size: 1.1rem;
+position: relative;
+}
+
+.footer-item ul{
+    margin-right: 2rem;
+}
+.footer-item li{
+    margin-bottom: 1em;
+}
+.footer-item a{
+    color: #515154;
+    transition: color .2s ;
+    display: inline;
+}
+.footer-item a:hover{
+    color: #1d1d1f;
+    
+}

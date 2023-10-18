@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@media screen and (max-width:1068px){
+    header .container{
+        transform: translate3d(5.4rem,0,0);
+    }
+    .iphone-12{
+        background-image: url(../imgs/iphone12/iphone-mi.jpg);
+    }
+    .iphone-12-pro{
+        background-image: url(../imgs/iphone12-pro/iphone12-pro-mi.jpg);
+    }
+    .watch{
+        background-image: url(../imgs/watch/watch-mi.jpg);
+    }
+    .hero{
+        height: 65rem;
+        background-size: auto 69.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+    .title-head{
+        font-size: 4.4rem;
+    }
+    .title-sub-head{
+        font-size: 2.4rem;
+    }
+    .cta-link:nth-child(2){
+        margin-left: 2rem;
+    }
+    .title-head-watch{
+        height: 6.2rem;
+        background-size: auto 6.2rem;
+        background: url(../imgs/watch/logo_watch_small.png) center no-repeat;
+    }
+    /* 그리드 영역 */
+    .grid-hero{
+        background-size: auto 69.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+    .event{
+        background-image: url(../imgs/ect/event_mi.jpg);
+        background-position: 43% 80%;
+    }
+
+    .ipad{
+        background-image: url(../imgs/ect/pad-mi.jpg);
+        background-position: 50% 12rem;
+        background-size:auto 43.5rem;
+    }
+    
+    .macPro{
+        background-image: url(../imgs/ect/pro-mi.jpg);
+    }
+    .macAir{
+        background-image: url(../imgs/ect/air-mi.jpg);
+    }
+    .airPods{
+        background-image: url(../imgs/ect/airpot-mi.jpg);
+    }
+    .watchs{
+        background-image: url(../imgs/ect/watch_medium.jpg);
+    }
+    .grid-head{
+        font-size: 3.1rem;
+
+    }
+    .grid-sub-head{
+        font-size: 1.7rem;
+
+    }
+    .module-contents{
+
+        height: 40rem;
+}
+
+}
+@media screen and (max-width:767px){
+    header{
+        height: 4.8rem;
+        transition: background .36s cubic-bezier(0.32,0.08,0.24,1),
+        height .56s cubic-bezier(0.32,0.08,0.24,1);
+    }
+    header .container{
+        padding: 0;
+        transform: translate3d(0,0,0);
+    }
+    .iphone-12{
+        margin-top: 4.8rem;
+    }
+
+    .nav-list{
+        margin-top: 0;
+    }
+    .nav-mobile{
+        display: flex;
+    }
+    .nav-item{
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-item-hidden{
+        display: none;
+    }
+    .mobile-menu{
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        transform: translate3d(1.5rem,0,0);
+    }
+    .line{
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: #fff;
+        transition: margin-top .31s ease-in;
+    }
+    .line-top{
+        margin-top: -5px;
+    }
+    .line-bottom{
+        margin-bottom: -.4rem;
+    }
+    .active .line-top{
+        margin-top: 0;
+        transform: rotate(45deg)
+        ;
+        transition: margin-top .31s ease-in;
+    }
+    .active .line-bottom{
+        margin-bottom: 0;
+        transform: rotate(-45deg)
+        ;
+        transition: margin-top .31s ease-in;
+    }
+    header.active{
+        height: 100%;
+        background-color: #000;
+    }
+    .nav-link-apple{
+        width: 1.8rem;
+        height: 4.8rem;
+        transition: opacity .3s;
+        position: relative;
+        z-index: 1500;
+    }
+    
+    .nav-link-bag{
+        width: 1.6rem;
+        height: 4.8rem;
+        transition: opacity 3s;
+    }
+    .nav{
+        position: relative;
+    }
+    .nav-link{
+        font-size: 1.7rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .nav-web{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        transition: opacity .3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .active .nav-web{
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .nav-link-bag{
+        opacity: 0;
+        transition: opacity .3s;
+    }
+    .nav-web .nav-item{
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255,255,255,.1);
+    }
+    .nav-web .nav-item a{
+        display: block;
+        width: 100%;
+    }
+    .active .nav-web .nav-item{
+        animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .grid-hero{
+        grid-template-columns: repeat(1,1fr);
+        gap: 0;
+    }
+    .module-contents{
+                border-top: .6rem solid #fff;
+        border-bottom: .6rem solid #fff;
+    }
+    .grid-head{
+        font-size: 3.8rem;
+
+    }
+    .grid-sub-head{
+        font-size: 1.9rem;
+
+    }
+    .blind{
+        display: block;
+    }
+    .notice p{
+        font-size: 1.1rem;
+    }
+    .footer-item{
+        width: 100%;
+        padding-top: 0;
+    }
+    .footer-item ul{
+        display: none;
+    }
+    .footer-item h3{
+        border-bottom: 1px solid #d2d2d7;
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .footer-item .pd{
+        padding-top: 1rem;
+    }
+}
+    @media screen and (max-width:735px){
+        .iphone-12{
+            background-image: url(../imgs/iphone12/iphone-small.jpg);
+        }
+        .iphone-12-pro{
+            background-image: url(../imgs/iphone12-pro/iphone12-pro-smalljpg.jpg);
+        }
+        .watch{
+            background-image: url(../imgs/watch/watch-small.jpg);
+        }
+        .hero{
+            height: 50rem;
+            background-size: auto 54.8rem;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+        }
+        .event{
+            background-image: url(../imgs/ect/event_small.jpg);
+            background-position: 43% 80%;
+        }
+    
+        .ipad{
+            background-image: url(../imgs/ect/pad-small.jpg);
+            background-position: 50% 12rem;
+            background-size:auto 43.5rem;
+        }
+        
+        .macPro{
+            background-image: url(../imgs/ect/pro-small.jpg);
+        }
+        .macAir{
+            background-image: url(../imgs/ect/air-small.jpg);
+        }
+        .airPods{
+            background-image: url(../imgs/ect/airpot-small.jpg);
+        }
+        .watchs{
+            background-image: url(../imgs/ect/watch_small.jpg);
+        }
+    }
+
