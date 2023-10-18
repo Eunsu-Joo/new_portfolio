@@ -37,6 +37,7 @@
     margin-top: 15px;
     color: #225ea7;
     font-size: 2rem;
+    line-height: 120%;
 }
 .modal .close-btn{
     font-family: 'Poppins',sans-serif;
@@ -45,7 +46,6 @@
     left: 50%;
     transform: translateX(-50%);
     border: 1px solid #225ea7;
-    transition: all 0.5s;
     padding: 12px 35px;
     box-shadow: 0 10px 25px #3c4a5645;
     font-size: 1.3rem;
@@ -72,4 +72,25 @@
 }
 .modal .close-btn:hover:after{
     top: 0;
+}
+@media (max-width: 767px) {
+    .modal-contents{
+        width: 300px;
+        height: 250px;
+        padding: 25px 18px;
+    }
+    .modal-title{
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    .modal-title span{
+        display: block;
+        margin-top: 15px;
+        color: #225ea7;
+        font-size: 1.4rem;
+    }
+    .modal .close-btn{
+        padding: 6px 24px;
+        font-size: 1rem;
+    }
 }
