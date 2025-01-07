@@ -68,7 +68,10 @@ button {
 }
 
 /* common  */
-
+.contact{
+    font-size: 24px;
+    font-weight: bold;
+}
 .header {
     height: 56px;
     display: flex;
@@ -77,6 +80,9 @@ button {
 }
 .header p{
     margin-right: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
 }
 .header a {
     width: 36px;
@@ -96,7 +102,7 @@ button {
     position: relative;
     max-width: 1290px;
     width: 100%;
-    padding: 0 20px;
+    padding: 8px 20px 0 20px;
     margin: 0 auto;
 }
 
@@ -369,12 +375,11 @@ main {
 }
 
 .btn_top {
-    visibility: hidden;
     position: fixed;
     bottom: 24px;
     right: 32px;
-    width: 58px;
-    height: 58px;
+    width: 64px;
+    height: 64px;
     border: 0;
     background-color: transparent;
     text-align: center;
@@ -401,7 +406,7 @@ main {
     top: 50%;
     left: 0;
     right: 0;
-    content: 'TOP';
+    content: 'Call☎️';
     transform: translateY(-50%);
 }
 
@@ -555,8 +560,26 @@ footer h2::after {
         left: 215px;
     }
 
-    .btn_top {
+
+    .header {
+        height: 56px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .header p{
+        margin-right: 0px;
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+    .header a {
         display: none;
     }
+
+    .header a svg {
+        width: 100%;
+    }
+
 }
 
